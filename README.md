@@ -24,7 +24,7 @@ If you find this code useful, please reference in our paper:
 }
 ```
 
-#Run commands are followed implementation of paper Co^2L: Contrastive Continual Learning
+# Run commands are followed implementation of paper Co^2L: Contrastive Continual Learning
 ## Representation Learning
 ```
 python main.py --batch_size 512 --model resnet18 --dataset cifar10 --mem_size 200 --epochs 100 --start_epoch 500 --learning_rate 0.5 --temp 0.5 --current_temp 0.2 --past_temp 0.01  --cosine --syncBN
