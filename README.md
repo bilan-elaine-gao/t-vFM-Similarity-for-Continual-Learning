@@ -1,6 +1,6 @@
 # t-vFM-Similarity-for-Continual-Learning
 
-code for Towards Robust Feature Learning with t-vFM Similarity for Continual Learning.
+Code for Towards Robust Feature Learning with t-vFM Similarity for Continual Learning.
 Our code is based on the implementation of [Co^2L: Contrastive Continual Learning](https://github.com/chaht01/Co2L).
 
 If you find this code useful, please reference in our paper:
