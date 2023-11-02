@@ -3,7 +3,8 @@
 code for Towards Robust Feature Learning with t-vFM Similarity for Continual Learning.
 Our code is based on the implementation of [Co^2L: Contrastive Continual Learning](https://github.com/chaht01/Co2L).
 
-'''
+If you find this code useful, please reference in our paper:
+```
 @inproceedings{DBLP:conf/iclr/GaoK23,
   author       = {Bilan Gao and
                   YoungBin Kim},
@@ -21,7 +22,7 @@ Our code is based on the implementation of [Co^2L: Contrastive Continual Learnin
   biburl       = {https://dblp.org/rec/conf/iclr/GaoK23.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
-'''
+```
 
 #Run commands are followed implementation of paper Co^2L: Contrastive Continual Learning
 ## Representation Learning
