@@ -1,6 +1,6 @@
 '''
 The original source code can be found in
-https://github.com/HobbitLong/SupContrast/blob/master/main_supcon.py
+https://github.com/chaht01/Co2L/blob/main/main.py
 '''
 
 from __future__ import print_function
@@ -115,7 +115,7 @@ def parse_option():
     parser.add_argument('--kappa', type=float, default=16.,
                         choices=[2.,4.,6.,8.,16.,32.,64.], help='kappa value for new similarity function')
     parser.add_argument('--bias', type=float, default=0.,
-                        help='bias for new similarity function')
+                        help='bias for t-vMF similarity')
 
     opt = parser.parse_args()
 
