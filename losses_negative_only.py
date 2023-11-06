@@ -5,7 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 '''
 The original source code can be found in
-https://github.com/HobbitLong/SupContrast/blob/master/losses.py
+https://github.com/chaht01/Co2L/blob/main/main.py
 '''
 
 
@@ -153,12 +153,11 @@ class tvMFLoss(nn.Module):
         else:
             raise ValueError('Unknown mode: {}'.format(self.contrast_mode))
 
-        # compute logits # 计算两两样本间点乘相似度
+        
 
         
         tvMFsim=tvMFsimilarity(anchor_feature,contrast_feature.T,kappa=4.,bias=0)
-        #cosine = torch.matmul(F.normalize(anchor_feature, p=2, dim=1), F.normalize(contrast_feature.T, p=2, dim=1)) # [N x out_features]
-        #tvMFsim =  (1. + cosine).div(1. + (1.-cosine).mul(self.kappa)) - 1.
+        
 
         if self.bias is not None:
             tvMFsim.add_(self.bias)
@@ -217,7 +216,10 @@ class tvMFLoss(nn.Module):
         return loss
 
 
-
+'''
+The original source code can be found in
+https://github.com/tk1980/tvMF
+'''
 def tvMFsimilarity(input1,input2,kappa,bias):
     cosine = torch.matmul(F.normalize(input1, p=2, dim=1), F.normalize(input2, p=2, dim=1)) # [N x out_features]
     tvMFsim =  (1. + cosine).div(1. + (1.-cosine).mul(kappa)) - 1.
